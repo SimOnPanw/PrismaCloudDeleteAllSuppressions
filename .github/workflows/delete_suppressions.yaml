@@ -32,6 +32,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: 
+      - name: Run the script
         run: |
-          python main.py --hours ${{ github.event.inputs.LIMIT }}
+          python main.py --limit ${{ github.event.inputs.LIMIT }}
